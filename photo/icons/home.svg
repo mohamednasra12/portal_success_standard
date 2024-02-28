@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="vuesax_bold_home-hashtag" data-name="vuesax/bold/home-hashtag" transform="translate(0 0)">
+    <g id="home-hashtag">
+      <path id="Vector" d="M2.79,2.79h-.7A2.1,2.1,0,0,1,0,.7V0H2.79Z" transform="translate(8.51 14.09)" fill="#fff"/>
+      <path id="Vector-2" data-name="Vector" d="M2.79.7A2.1,2.1,0,0,1,.7,2.79H0V0H2.79Z" transform="translate(12.7 14.09)" fill="#fff"/>
+      <path id="Vector-3" data-name="Vector" d="M2.79,2.09v.7H0V0H.7A2.1,2.1,0,0,1,2.79,2.09Z" transform="translate(12.7 9.91)" fill="#fff"/>
+      <path id="Vector-4" data-name="Vector" d="M1.96,4.818,7.71.788a4.836,4.836,0,0,1,5.48.13l5.01,3.91a5.115,5.115,0,0,1,1.79,3.64v6.9A4.628,4.628,0,0,1,15.38,20H4.61A4.62,4.62,0,0,1,0,15.378V8.6A5.06,5.06,0,0,1,1.96,4.818Zm3.15,7.97a3.5,3.5,0,0,0,3.49,3.49h2.79a3.493,3.493,0,0,0,3.49-3.49V10a3.5,3.5,0,0,0-3.49-3.49H8.6A3.493,3.493,0,0,0,5.11,10v2.79Z" transform="translate(2.01 2.002)" fill="#fff"/>
+      <path id="Vector-5" data-name="Vector" d="M2.09,0h.7V2.79H0v-.7A2.1,2.1,0,0,1,2.09,0Z" transform="translate(8.51 9.91)" fill="#fff"/>
+      <path id="Vector-6" data-name="Vector" d="M0,24H24V0H0Z" transform="translate(0 0)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

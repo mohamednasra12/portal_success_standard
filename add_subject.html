@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اضافة ماده</title>
+
+    <!-- ? Favicons img -->
+    <link rel="icons" href="img/nav.png" type="image" />
+    <!-- ? Favicons img-->
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/swiper-demos.css" />
+    <link rel="stylesheet" href="main-scss/main.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- main css -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Cairo:wght@300;500;900&family=Roboto:ital,wght@1,100;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+  </head>
+  <body>
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="img-log">
+            <img src="photo/Group 98954.png" alt="" />
+          </div>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <i class="fa-solid fa-house-user ico"></i>
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <!-- قسم التعليمي -->
+          <li class="nav-item">
+            <a
+              href="#submenueducations"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <i class="fa-brands fa-leanpub ico"></i>
+              <span>القسم التعليمي</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenueducations"
+              data-bs-parent="#menu"
+            >
+              <li class="nav-item">
+                <a href="Subjects.html" class="nav-link align-middle">
+                  <span>المواد</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="Calibrator.html" class="nav-link align-middle">
+                  <span>المعاير</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="Indicators.html" class="nav-link align-middle">
+                  <span>المؤشرات</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- قسم التعليمي -->
+          <!-- الأمتحانات -->
+          <!-- <li class="nav-item">
+                <a
+                  href="#submenulessones"
+                  data-bs-toggle="collapse"
+                  class="nav-link accordion-button align-middle collapsed"
+                >
+                  <img src="photo/icons/exams.svg" alt="icons" />
+                  <span>الأمتحانات</span>
+                  <i class="fa-solid fa-angle-up"></i>
+                </a>
+                <ul
+                  class="collapse flex-column"
+                  id="submenulessones"
+                  data-bs-parent="#menu"
+                >
+                  <li class="nav-item">
+                    <a href="exams.html" class="nav-link align-middle">
+                      <span>الاختبارات</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="Interactive-question.html"
+                      class="nav-link align-middle"
+                    >
+                      <span>الاسالة التفاعلية</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Assignment-details.html" class="nav-link align-middle">
+                      <span>الواجبات</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href=" Question-bank.html" class="nav-link align-middle">
+                      <span>بنك الاسئله</span>
+                    </a>
+                  </li>
+                </ul>
+              </li> -->
+          <!-- الأمتحانات -->
+          <!-- الحقائب -->
+          <li class="nav-item">
+            <a
+              href="#submenulessones"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <i class="fa-solid fa-briefcase ico"></i>
+              <span>الحقائب</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenulessones"
+              data-bs-parent="#menu"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle">
+                  <span>....</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle">
+                  <span>....</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle">
+                  <span>...</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href=" #" class="nav-link align-middle">
+                  <span>...</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- الحقائب -->
+          <!-- المستخدمين -->
+          <li class="nav-item">
+            <a
+              href="#submenuuser"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <i class="fa-solid fa-users ico"></i>
+              <span>المستخدمين</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuuser"
+              data-bs-parent="#menu"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle">
+                  <span>الطلاب</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="teachers.html" class="nav-link align-middle">
+                  <span>المدربين</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle">
+                  <span>ادارة طلابات التسجيل</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- المستخدمين -->
+          <!-- الموقع الألكتروني -->
+
+          <li class="nav-item">
+            <a
+              href="#submenuWebsite"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <i class="fa-solid fa-globe ico"></i>
+              <span>الموقع الأكتروني</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuWebsite"
+              data-bs-parent="#menu"
+            >
+              <li>
+                <a href="#" class="nav-link"> <span>اضافة اسليدر</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>من نحن</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>شركاء النجاح</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>الخدمات</span></a>
+              </li>
+            </ul>
+          </li>
+          <!-- الموقع الألكتروني -->
+
+          <!-- المدوته -->
+          <li class="nav-item">
+            <a
+              href="#submenuWebsite-2"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <i class="fa-brands fa-blogger-b ico"></i>
+              <span>المدونه</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuWebsite-2"
+              data-bs-parent="#menu"
+            >
+              <li>
+                <a href="#" class="nav-link"> <span>عرض المدونه</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>الأقسام</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>الهشتاج</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>اضافة مدونه</span></a>
+              </li>
+            </ul>
+          </li>
+          <!-- المدوته -->
+          <!-- التقارير -->
+          <li class="nav-item">
+            <a
+              href="#submenuWebsite-1"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <i class="fa-solid fa-clipboard ico"></i>
+              <span>التقارير</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuWebsite-1"
+              data-bs-parent="#menu"
+            >
+              <li>
+                <a href="#" class="nav-link"> <span>التقارير العامه</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>تقارير الأنجازات</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <span>تقارير الحضور والأنصراف</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>تقارير الأمتحانات</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>تقارير المسابقات</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>تقارير السلوكيه</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>تقارير الاكادميه</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> <span>التقارير الفائته</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <span>التقارير التفصيليه</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <span>التقارير الجمعيه أو المدرسه</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- التقارير -->
+          <!-- بنك اسئله -->
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-file-circle-question ico"></i>
+              <span>بنك الاسئله</span>
+            </a>
+          </li>
+          <!-- بنك اسئله -->
+          <!-- الاشتراكات -->
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-diagram-next ico"></i>
+              <span>الاشتراكات</span>
+            </a>
+          </li>
+          <!-- الاشتراكات -->
+
+          <!-- المكتبه الالكترونيه -->
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-book-atlas ico"></i>
+              <span>المكتبه </span>
+            </a>
+          </li>
+          <!-- المكتبه الالكترونيه -->
+
+          <!-- الاعدادات -->
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-gears ico"></i>
+              <span>الاعدادات العامة</span>
+            </a>
+          </li>
+          <!-- الاعدادات -->
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="logo-menu">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+
+          <div>
+            <div class="dropdown d-flex align-items-center">
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="img/UserCircle.svg" alt="" />
+                <img src="photo/Ellipse 1926.png" alt="" />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+        <!-- content -->
+        <div class="add_Subject">
+          <div class="content">
+            <div class="adress">
+                <h4>اضافة ماده جديده</h4>
+              </div>
+             <form action="Subjects.html">
+               <div class="row">
+               <div class="col-lg-6">
+                <div class="text">
+                    <label for="">اسم الماده بالعربي</label>
+               <div class="text-input">
+                <input type="text" placeholder="ادخل اسم الماده">
+               </div>
+                  </div>
+               </div>
+                <div class="col-lg-6">
+                    <div class="text">
+                        <label for="">اسم الماده بالانجليزي</label>
+                   <div class="text-input">
+                    <input type="text" placeholder="ادخل اسم الماده">
+                   </div>
+                      </div>
+                </div>
+               </div>
+                 <div class="add-new">
+                    <button type="submit" class="add-this">اضافة</button>
+                 </div>
+             </form>
+            
+          </div>
+        </div>
+
+        <!-- content -->
+      </section>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-demos.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
