@@ -117,6 +117,9 @@
   
     width: 78px;
 }
+.add_calibrator .select {
+  width: 100%;
+}
 }
 
 /* Extra small devices (phones, 767px and down) */
@@ -142,6 +145,9 @@
   .sidebar .nav-pills .nav-item .nav-link.active span, .sidebar .nav-pills .nav-item .nav-link span {
   
     width: 78px;
+}
+.add_calibrator .select {
+  width: 100%;
 }
 
 }
