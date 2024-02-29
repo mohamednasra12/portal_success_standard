@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>اضافة معيار</title>
+    <title>المعاير</title>
 
     <!-- ? Favicons img -->
     <link rel="icons" href="img/nav.png" type="image" />
@@ -140,12 +140,12 @@
               data-bs-parent="#menu"
             >
               <li class="nav-item">
-                <a href="Description_bag.html" class="nav-link align-middle">
+                <a href="#" class="nav-link align-middle">
                   <span>وصف الحقيبه</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="content_bag.html" class="nav-link align-middle">
+                <a href="#" class="nav-link align-middle">
                   <span>محتوي الحقيبه</span>
                 </a>
               </li>
@@ -399,51 +399,101 @@
         </nav>
         <!-- ======= End navbar ======= -->
         <!-- content -->
-        <div class="add_calibrator">
+        <div class="calibrator">
           <div class="content">
             <div class="adress">
-                <h4>اضافة معيار جديد</h4>
-              </div>
-             <form action="Calibrator.html">
-              
-                   <div class="choose">
-                    <label for="">اختر الماده</label>
-                    <div class="select">
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                   </div>
-               
-               <div class="row">
-               <div class="col-lg-6">
-                <div class="text">
-                    <label for="">اسم المعيار بالعربي</label>
-               <div class="text-input">
-                <input type="text" placeholder="ادخل اسم المعيار">
-               </div>
-                  </div>
-               </div>
-                <div class="col-lg-6">
-                    <div class="text">
-                        <label for="">اسم المعيار بالانجليزي</label>
-                   <div class="text-input">
-                    <input type="text" placeholder="ادخل اسم المعيار">
-                   </div>
-                      </div>
+              <h4>الطلاب</h4>
+              <a href="add_student.html">
+                <button type="button" class="new-add">
+                  +اضافة طالب جديد
+                </button>
+              </a>
+            </div>
+            <div class="table_data">
+              <div class="filters">
+                <div class="search">
+                  <input
+                    type="search"
+                    class="input-style"
+                    placeholder="ابحث من هنا....."
+                  />
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-               </div>
-                 <div class="add-new">
-                    <button type="submit" class="add-this">اضافة</button>
-                 </div>
-             </form>
-            
+                <div class="celender">
+                  <input type="date" class="input-style" />
+                </div>
+                <div class="select">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">رقم الطالب</th>
+                      <th scope="col">اسم الطالب</th>
+                      <th scope="col">رقم الهاتف</th>
+                      <th scope="col">تاريخ الاضافة</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>محمد أحمد</td>
+                      <td>01027003762</td>
+                      <td>22/1/2024</td>
+                      <td>
+                       
+                        <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-pen"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>محمد أحمد</td>
+                        <td>01027003762</td>
+                        <td>22/1/2024</td>
+                        <td>
+                         
+                          <i class="fa-solid fa-trash"></i>
+                          <i class="fa-solid fa-pen"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>محمد أحمد</td>
+                        <td>01027003762</td>
+                        <td>22/1/2024</td>
+                        <td>
+                         
+                          <i class="fa-solid fa-trash"></i>
+                          <i class="fa-solid fa-pen"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>محمد أحمد</td>
+                        <td>01027003762</td>
+                        <td>22/1/2024</td>
+                        <td>
+                         
+                          <i class="fa-solid fa-trash"></i>
+                          <i class="fa-solid fa-pen"></i>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
 
