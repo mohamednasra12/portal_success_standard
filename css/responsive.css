@@ -4,6 +4,9 @@
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 1024.98px) {
+  .sidebar .nav-pills .nav-item .nav-link span {
+    font-size: 0.6rem;
+  }
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -95,93 +98,50 @@
 }
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 768.98px) {
-  .card_topic_second .button .btn {
-    padding: 1%;
+  .filters {
+    display: block;
   }
+  .search {
+    margin-bottom: 10px;
+  }
+  .celender {
+    margin-bottom: 10px;
+  }
+  .sidebar .nav-pills {
+    width: 50%;
+  }
+  .img-log {
+    margin: 0;
+  }
+  .sidebar .nav-pills .nav-item .nav-link.active span, .sidebar .nav-pills .nav-item .nav-link span {
+  
+    width: 78px;
+}
 }
 
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 425px) {
-  .table-responsive {
-    overflow-x: scroll;
-    width: 135%;
+  .filters {
+    display: block;
   }
-  .table-responsive thead tr td {
-    font-size: 0.8rem;
+  .search {
+    margin-bottom: 10px;
   }
-  .form_topic {
-    padding-inline-end: 0;
-  }
-  .form_topic .btn.first {
-    width: 100%;
-  }
-  .modal_assistant .content .button {
-    flex-direction: column;
-  }
-  .modal_assistant .content .button .first,
-  .modal_assistant .content .button .second {
-    width: 100%;
-    margin-bottom: 2%;
-  }
-  .main_topic .btn.first {
-    width: 40%;
-  }
-  .button .edit,
-  .button .delete,
-  .button .show {
-    font-size: 0.6rem;
-  }
-  .table_topic tbody tr td .btn {
-    padding: 0.175rem 0.3rem;
-  }
-  .table_scroll {
-    overflow: scroll;
-  }
-  .nav_topic {
-    border: unset;
-  }
-  .cards_consultant .card_consulatant {
-    width: 100%;
-  }
-  .cards_consultant .card_consulatant .header_consultant .info .button .btn {
-    padding: 0.5rem;
-  }
-  .remove-icon,
-  .remove-sysyem-btn,
-  .add-phone-btn,
-  .add-image-btn,
-  .add-sysyem-btn {
-    margin-top: 30px;
-    width: unset;
-    height: unset;
+  .celender {
+    margin-bottom: 10px;
   }
   .sidebar .nav-pills {
-    width: 57%;
+    width: 50%;
   }
-  .course_main_topic {
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
+  .img-log {
+    margin: 0;
   }
-  .course_main_topic .button {
-    justify-content: flex-start;
-    width: 100%;
+  .sidebar .nav-pills svg {
+    display: block !important;
   }
-  .course_main_topic .button .btn {
-    width: 40%;
-  }
-  .dropdown_filter .dropdown-toggle {
-    margin-bottom: 4%;
-  }
-  .nav_topic .nav-item {
-    width: 100%;
-  }
-  .main_topic h4 span {
-    display: block;
-    margin-top: 4%;
-    width: 70%;
-  }
-  .detials_clerck .content .img {
-    width: 54px;
-  }
+  .sidebar .nav-pills .nav-item .nav-link.active span, .sidebar .nav-pills .nav-item .nav-link span {
+  
+    width: 78px;
+}
+
 }
