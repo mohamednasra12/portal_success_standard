@@ -391,6 +391,12 @@ button.new-add {
   width: 100%;
   border: 1px solid #ebeaed;
   border-radius: 10px;
+  position: relative;
+}
+.text-input .addInput {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
 }
 .select {
   width: 100%;
@@ -469,7 +475,6 @@ button.add-this {
   border: 3px solid var(--color-primary);
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
 .add-photo .add-pic {
@@ -528,7 +533,33 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
+}
+.main-content {
+  width: 50%;
+  border: 1px solid var(--color-text);
+  margin-top: 15px;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+button.add-in {
+  padding: 0.5rem 2rem;
+  border: 1px solid;
+  background-color: var(--color-primary);
+  font-family: "regular";
+  color: white;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.del {
+  padding: 0.5rem;
+  border: 1px solid;
+  background-color: red;
+  font-family: "regular";
+  color: white;
+  border-radius: 5px;
+  display: block;
+  margin-inline-start: auto;
 }
 /* start */

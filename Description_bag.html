@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="css/swiper-demos.css" />
-    <link rel="stylesheet" href="main-scss/main.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
     <!-- main css -->
@@ -140,16 +140,15 @@
               data-bs-parent="#menu"
             >
               <li class="nav-item">
-                <a href="#" class="nav-link align-middle">
+                <a href="Description_bag.html" class="nav-link align-middle">
                   <span>وصف الحقيبه</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link align-middle">
+                <a href="content_bag.html" class="nav-link align-middle">
                   <span>محتوي الحقيبه</span>
                 </a>
               </li>
-              
             </ul>
           </li>
           <!-- الحقائب -->
@@ -404,25 +403,107 @@
             <div class="adress">
               <h4>وصف الحقيبه</h4>
             </div>
-            <form action="students.html">
+            <form action="">
               <div class="row">
-            
                 <div class="col-lg-6">
                   <div class="text">
-                    <label for="">اسم الطالب</label>
+                    <label for="">اسم الحقيبه</label>
                     <div class="text-input">
-                      <input type="text" placeholder="ادخل اسم المدرب" />
+                      <input type="text" placeholder="ادخل اسم الحقيبه" />
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="text">
-                    <label for="">البريد الالكتروني</label>
+                    <label for="">اهداف الحقيبه</label>
                     <div class="text-input">
-                      <input
-                        type="email"
-                        placeholder="ادخل البريد الالكتروني"
-                      />
+                      <input type="text" placeholder="ادخل اهداف الحقيبه" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="text">
+                    <label for="">الفئه المستهدفه</label>
+                    <div class="text-input">
+                      <input type="text" placeholder="ادخل الفئه المستهدفه" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for=""> اختر اللغه </label>
+                  <div class="select">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1" selected>عربي</option>
+                      <option value="2">انجليزي</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for=""> اختر المدرب </label>
+                  <div class="select">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for=""> المواد </label>
+                  <div class="select">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for=""> المعاير </label>
+                  <div class="select">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for=""> اختر الؤشر </label>
+                  <div class="select">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="text">
+                    <label for="">سعر الحقيبه</label>
+                    <div class="text-input">
+                      <input type="number" placeholder="ادخل سعر الحقيبه" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="text">
+                    <label for="">عدد الطلاب</label>
+                    <div class="text-input">
+                      <input type="number" placeholder="ادخل عدد الطلاب" />
                     </div>
                   </div>
                 </div>
@@ -433,25 +514,107 @@
                       class="form-select"
                       aria-label="Default select example"
                     >
-                      <option selected>Open this select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      <option value="1" selected>ذكر</option>
+                      <option value="2">أنثي</option>
                     </select>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="text">
-                      <label for="">رقم الهاتف</label>
-                      <div class="text-input">
-                        <input
-                          type="number"
-                          placeholder="ادخل رقم الهاتف"
-                        />
-                      </div>
+                  <div class="text">
+                    <label for="">تاريخ البدايه</label>
+                    <div class="text-input">
+                      <input type="date" />
                     </div>
                   </div>
-           
+                </div>
+                <div class="col-lg-6">
+                  <div class="text">
+                    <label for="">تاريخ الأنتهاء</label>
+                    <div class="text-input">
+                      <input type="date" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="text">
+                    <label for="">عدد المحاضرات</label>
+                    <div class="text-input">
+                      <input type="number" placeholder="ادخل عدد المحاضرات" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="text">
+                    <label for="">اجمالي عدد الساعات</label>
+                    <div class="text-input">
+                      <input
+                        type="number"
+                        placeholder="ادخل اجمالي عدد الساعات"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="text">
+                    <label for="">الحد الأدني للطلاب</label>
+                    <div class="text-input">
+                      <input type="number" placeholder="ادخل الأدني للطلاب" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for=""> اختر طريقة الدفع </label>
+                  <div class="select">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="text">
+                    <label for="">الحد الأقصي للطلاب</label>
+                    <div class="text-input">
+                      <input type="number" placeholder="ادخل الأقصي للطلاب" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group upload_file">
+                  <label for=""> اضافة فديو</label>
+                  <label for="imageCover" class="upload_file_label">
+                    <i class="fa-regular fa-image"></i>
+                    <span id="fileNameImage">اضغط هنا</span>
+                  </label>
+                  <input
+                    type="file"
+                    name=""
+                    id="imageCover"
+                    class="form-control"
+                    accept="image/*"
+                    hidden
+                  />
+                </div>
+                <script>
+                  const fileInputImage = document.getElementById("imageCover");
+                  const fileNameImage =
+                    document.getElementById("fileNameImage");
+
+                  fileInputImage.addEventListener("change", (event) => {
+                    const file = event.target.files[0];
+                    fileNameImage.textContent = file.name;
+                  });
+                </script>
+              </div>
+
+              <div class="col-lg-12">
+                <label for=""> وصف الحقيبه </label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
               </div>
 
               <div class="add-new">
