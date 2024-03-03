@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/swiper-demos.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <!-- main css -->
     <!-- font -->
@@ -140,13 +141,13 @@
               data-bs-parent="#menu"
             >
               <li class="nav-item">
-                <a href="Description_bag.html" class="nav-link align-middle">
-                  <span>وصف الحقيبه</span>
+                <a href="bags.html" class="nav-link align-middle">
+                  <span>الحقائب</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="content_bag.html" class="nav-link align-middle">
-                  <span>محتوي الحقيبه</span>
+                  <span>.</span>
                 </a>
               </li>
             </ul>
@@ -236,16 +237,24 @@
               data-bs-parent="#menu"
             >
               <li>
-                <a href="#" class="nav-link"> <span>عرض المدونه</span></a>
+                <a href="vewi_blog.html" class="nav-link">
+                  <span>عرض المدونه</span></a
+                >
               </li>
               <li>
-                <a href="#" class="nav-link"> <span>الأقسام</span></a>
+                <a href="sections.html" class="nav-link">
+                  <span>الأقسام</span></a
+                >
               </li>
               <li>
-                <a href="#" class="nav-link"> <span>الهشتاج</span></a>
+                <a href="Hashtag.html" class="nav-link">
+                  <span>الهشتاج</span></a
+                >
               </li>
               <li>
-                <a href="#" class="nav-link"> <span>اضافة مدونه</span></a>
+                <a href="add_blog.html" class="nav-link">
+                  <span>اضافة مدونه</span></a
+                >
               </li>
             </ul>
           </li>
@@ -307,7 +316,7 @@
           <!-- التقارير -->
           <!-- بنك اسئله -->
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <a href="question_bank.html" class="nav-link align-middle">
               <i class="fa-solid fa-file-circle-question ico"></i>
               <span>بنك الاسئله</span>
             </a>
@@ -403,7 +412,7 @@
             <div class="adress">
               <h4>وصف الحقيبه</h4>
             </div>
-            <form action="">
+            <form action="bags.html">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="text">
@@ -616,6 +625,84 @@
                 <label for=""> وصف الحقيبه </label>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
               </div>
+              <div class="adress">
+                <h4>محتوي الحقيبه</h4>
+              </div>
+              <div class="main-content">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <label for="">اختر المعاير </label>
+                    <div class="select">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <label for="">اختر المدربين </label>
+                    <div class="select">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <label for="">اجمالي عدد الساعات </label>
+                    <div class="select">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="texta">
+                      <div class="all-ba">
+                        <label for="">اختر المؤشرات</label>
+                        <div class="plus">
+                          <div
+                            class="select"
+                            id="fi"
+                            style="margin-bottom: 10px"
+                          >
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="go-plus" id="addSelect">
+                        <i class="fa-solid fa-circle-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ass"></div>
+                <button type="button" class="add-in">اضافة معاير</button>
+              </div>
 
               <div class="add-new">
                 <button type="submit" class="add-this">اضافة</button>
@@ -627,6 +714,134 @@
         <!-- content -->
       </section>
     </div>
+    <script>
+      $(document).ready(function () {
+        // Add click event to the "fa-solid fa-circle-plus" icon
+        $("#addSelect").click(function () {
+          // Clone the select element
+          var clonedSelect = $("#fi").clone();
+
+          // Append the cloned select to the container
+          $(".plus").append(clonedSelect);
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        // Click event for the "اضافة معاير" button
+        var appendIndex = 0;
+        $(".add-in").click(function () {
+          appendIndex++;
+
+          // Append the form HTML to the div with class "ass"
+          $(".ass").append(
+            '<div class="main-content">' +
+              '<button class="del">حذف</button>' +
+              '<div class="row">' +
+              '<div class="col-lg-4">' +
+              '<div class="text">' +
+              '<label for="">اختر المعاير </label>' +
+              '<div class="text-input">' +
+              ` <div class="select">` +
+              `<select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                      </div>` +
+              "</div>" +
+              "</div>" +
+              "</div>" +
+              '<div class="col-lg-4">' +
+              '<div class="text">' +
+              '<label for="">اختر المدربيين </label>' +
+              '<div class="text-input">' +
+              ` <div class="select">` +
+              `<select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>` +
+              "</div>" +
+              "</div>" +
+              "</div>" +
+              '<div class="col-lg-4">' +
+              '<div class="text">' +
+              '<label for="">اجمالي عدد الساعات </label>' +
+              '<div class="text-input">' +
+              ` <div class="select">` +
+              `<select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>` +
+              "</div>" +
+              "</div>" +
+              "</div>" +
+              '<div class="col-lg-12">' +
+              '<div class="texta">' +
+              '<label for="">اختر المؤشرات</label>' +
+              `<div class="all-ba">
+                       
+                        <div class="plus" id="plus${appendIndex}">
+                          <div
+                            class="select"
+                            id="fi${appendIndex}"
+                            style="margin-bottom: 10px"
+                          >
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>` +
+              `<div class="go-plus" id="addSelect${appendIndex}">` +
+              ` <i class="fa-solid fa-circle-plus"></i>` +
+              ` </div>` +
+              "</div>" +
+              "</div>" +
+              "</div>" +
+              "</div>"
+          );
+
+          // Clear input values in the appended form
+          $(".ass").find("input").val("");
+          $(`#addSelect${appendIndex}`).click(function () {
+            // Clone the select element
+            var clonedSelect = $(`#fi${appendIndex}`).clone();
+
+            // Append the cloned select to the container
+            $(`#plus${appendIndex}`).append(clonedSelect);
+          });
+        });
+
+        // Click event for the "حذف" button
+        $(document).on("click", ".del", function () {
+          // Remove the parent element of the clicked "حذف" button
+          $(this).parent().remove();
+        });
+      });
+    </script>
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/all.min.js"></script>
