@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>اضافة ماده</title>
+    <title>اضافة موضوع</title>
 
     <!-- ? Favicons img -->
     <link rel="icons" href="img/nav.png" type="image" />
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/swiper-demos.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <!-- main css -->
     <!-- font -->
@@ -142,11 +143,6 @@
               <li class="nav-item">
                 <a href="bags.html" class="nav-link align-middle">
                   <span>الحقائب</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="content_bag.html" class="nav-link align-middle">
-                  <span>.</span>
                 </a>
               </li>
             </ul>
@@ -406,26 +402,17 @@
         </nav>
         <!-- ======= End navbar ======= -->
         <!-- content -->
-        <div class="add_Subject">
+        <div class="add_teacher">
           <div class="content">
-            <div class="adress">
-              <h4>إضافة مدونه جديده</h4>
-            </div>
-            <form action="vewi_blog.html">
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="text">
-                    <label for="">العنوان</label>
-                    <div class="text-input">
-                      <input type="text" placeholder="ادخل عنوان المدونه" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="text">
-                    <label for=""> القسم</label>
-                    <div class="text-input">
-                      <div class="select">
+            <form action="bags.html">
+              <div class="adress">
+                <h4>محتوي الحقيبه</h4>
+              </div>
+              <div class="main-content">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <label for="">اختر المعاير </label>
+                    <div class="select">
                         <select
                         multiple
                         class="selectpicker"
@@ -434,16 +421,12 @@
                         <option value="1" selected>1</option>
                         <option value="2">2</option>
                       </select>
-                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="text">
-                    <label for=""> الهشتاج</label>
-                    <div class="text-input">
-                      <div class="select">
-                        <select
+                  <div class="col-lg-4">
+                    <label for="">اختر المدربين </label>
+                    <div class="select">
+                      <select
                       multiple
                       class="selectpicker"
                       aria-label="Default select example"
@@ -451,56 +434,198 @@
                       <option value="1" selected>1</option>
                       <option value="2">2</option>
                     </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <label for="">اجمالي عدد الساعات </label>
+                    <div class="select">
+                        <select
+                        multiple
+                        class="selectpicker"
+                        aria-label="Default select example"
+                      >
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="texta">
+                      <div class="all-ba">
+                        <label for="">اختر المؤشرات</label>
+                        <div class="plus">
+                          <div
+                            class="select"
+                            id="fi"
+                            style="margin-bottom: 10px"
+                          >
+                          <select
+                          multiple
+                          class="selectpicker"
+                          aria-label="Default select example"
+                        >
+                          <option value="1" selected>1</option>
+                          <option value="2">2</option>
+                        </select>
+                          </div>
+                        </div>
                       </div>
+                    
                     </div>
                   </div>
                 </div>
-                <div class="col-12">
-                  <div class="form-group upload_file">
-                    <label for=""> اضافة صوره للمدونه</label>
-                    <label for="imageCover" class="upload_file_label">
-                      <i class="fa-regular fa-image"></i>
-                      <p>اسحب صورة معبرة عن المدونه واسقطها هنا</p>
-                      <span id="fileNameImage">او اضغط هنا</span>
-                    </label>
-                    <input
-                      type="file"
-                      name=""
-                      id="imageCover"
-                      class="form-control"
-                      accept="image/*"
-                      hidden
-                    />
-                  </div>
-                  <script>
-                    const fileInputImage =
-                      document.getElementById("imageCover");
-                    const fileNameImage =
-                      document.getElementById("fileNameImage");
-
-                    fileInputImage.addEventListener("change", (event) => {
-                      const file = event.target.files[0];
-                      fileNameImage.textContent = file.name;
-                    });
-                  </script>
-                </div>
-                <div class="col-lg-12">
-                  <label for="">وصف</label>
-
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
+              
               </div>
+
+              <div class="ass"></div>
               <div class="add-new">
-                <button type="submit" class="add-this">اضافة</button>
-              </div>
+                  <button type="submit" class="add-this">اضافة</button>
+                </div>
             </form>
+            <button type="button" class="add-in">اضافة معاير</button>
           </div>
         </div>
 
         <!-- content -->
       </section>
     </div>
+    <!-- <script>
+      $(document).ready(function () {
+        // Add click event to the "fa-solid fa-circle-plus" icon
+        $("#addSelect").click(function () {
+          // Clone the select element
+          var clonedSelect = $("#fi").clone();
 
+          // Append the cloned select to the container
+          $(".plus").append(clonedSelect);
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        // Click event for the "اضافة معاير" button
+        var appendIndex = 0;
+        $(".add-in").click(function () {
+          appendIndex++;
+
+          // Append the form HTML to the div with class "ass"
+          $(".ass").append(
+            '<div class="main-content">' +
+              '<button class="del">حذف</button>' +
+              '<div class="row">' +
+              '<div class="col-lg-4">' +
+              '<div class="text">' +
+              '<label for="">اختر المعاير </label>' +
+              '<div class="text-input">' +
+              ` <div class="select">` +
+              `<select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                      </div>` +
+              "</div>" +
+              "</div>" +
+              "</div>" +
+              '<div class="col-lg-4">' +
+              '<div class="text">' +
+              '<label for="">اختر المدربيين </label>' +
+              '<div class="text-input">' +
+              ` <div class="select">` +
+              `<select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>` +
+              "</div>" +
+              "</div>" +
+              "</div>" +
+              '<div class="col-lg-4">' +
+              '<div class="text">' +
+              '<label for="">اجمالي عدد الساعات </label>' +
+              '<div class="text-input">' +
+              ` <div class="select">` +
+              `<select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>` +
+              "</div>" +
+              "</div>" +
+              "</div>" +
+              '<div class="col-lg-12">' +
+              '<div class="texta">' +
+              '<label for="">اختر المؤشرات</label>' +
+              `<div class="all-ba">
+                       
+                        <div class="plus" id="plus${appendIndex}">
+                          <div
+                            class="select"
+                            id="fi${appendIndex}"
+                            style="margin-bottom: 10px"
+                          >
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>` +
+              `<div class="go-plus" id="addSelect${appendIndex}">` +
+              ` <i class="fa-solid fa-circle-plus"></i>` +
+              ` </div>` +
+              "</div>" +
+              "</div>" +
+              "</div>" +
+              "</div>"
+          );
+
+          // Clear input values in the appended form
+          $(".ass").find("input").val("");
+          $(`#addSelect${appendIndex}`).click(function () {
+            // Clone the select element
+            var clonedSelect = $(`#fi${appendIndex}`).clone();
+
+            // Append the cloned select to the container
+            $(`#plus${appendIndex}`).append(clonedSelect);
+          });
+        });
+
+        // Click event for the "حذف" button
+        $(document).on("click", ".del", function () {
+          // Remove the parent element of the clicked "حذف" button
+          $(this).parent().remove();
+        });
+      });
+    </script> -->
+    <script>
+        $(document).ready(function () {
+          // When the "اضافة معاير" button is clicked
+          $(".add-in").click(function () {
+            // Append the content of the main-content div to the ass div
+            $(".ass").append($(".main-content").html());
+          });
+        });
+      </script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
