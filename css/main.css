@@ -274,7 +274,9 @@ textarea {
   font-family: "semibold";
   color: white !important;
 }
-
+.sidebar .nav-pills .nav-item .nav-link.active svg {
+  color: white !important;
+}
 .sidebar.open ~ .index_cards,
 .sidebar.opened ~ .index_cards {
   width: 85%;
