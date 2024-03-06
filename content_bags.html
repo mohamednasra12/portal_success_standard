@@ -337,10 +337,31 @@
 
           <!-- الاعدادات -->
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
-              <i class="fa-solid fa-gears ico"></i>
-              <span>الاعدادات العامة</span>
+            <a
+              href="#submenuWebsite-set"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <i class="fa-solid fa-clipboard ico"></i>
+              <span>الاعدادات العامه</span>
+              <i class="fa-solid fa-angle-up"></i>
             </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuWebsite-set"
+              data-bs-parent="#menu"
+            >
+              <li>
+                <a href="Weekends.html" class="nav-link">
+                  <span>العطلات الاسبوعيه</span></a
+                >
+              </li>
+              <li>
+                <a href="Public_holidays.html" class="nav-link">
+                  <span>العطلات الرسميه</span></a
+                >
+              </li>
+            </ul>
           </li>
           <!-- الاعدادات -->
         </ul>
@@ -413,7 +434,7 @@
                   <div class="col-lg-4">
                     <label for="">اختر المعاير </label>
                     <div class="select">
-                        <select
+                      <select
                         multiple
                         class="selectpicker"
                         aria-label="Default select example"
@@ -427,19 +448,19 @@
                     <label for="">اختر المدربين </label>
                     <div class="select">
                       <select
-                      multiple
-                      class="selectpicker"
-                      aria-label="Default select example"
-                    >
-                      <option value="1" selected>1</option>
-                      <option value="2">2</option>
-                    </select>
+                        multiple
+                        class="selectpicker"
+                        aria-label="Default select example"
+                      >
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-lg-4">
                     <label for="">اجمالي عدد الساعات </label>
                     <div class="select">
-                        <select
+                      <select
                         multiple
                         class="selectpicker"
                         aria-label="Default select example"
@@ -459,28 +480,26 @@
                             id="fi"
                             style="margin-bottom: 10px"
                           >
-                          <select
-                          multiple
-                          class="selectpicker"
-                          aria-label="Default select example"
-                        >
-                          <option value="1" selected>1</option>
-                          <option value="2">2</option>
-                        </select>
+                            <select
+                              multiple
+                              class="selectpicker"
+                              aria-label="Default select example"
+                            >
+                              <option value="1" selected>1</option>
+                              <option value="2">2</option>
+                            </select>
                           </div>
                         </div>
                       </div>
-                    
                     </div>
                   </div>
                 </div>
-              
               </div>
 
               <div class="ass"></div>
               <div class="add-new">
-                  <button type="submit" class="add-this">اضافة</button>
-                </div>
+                <button type="submit" class="add-this">اضافة</button>
+              </div>
             </form>
             <button type="button" class="add-in">اضافة معاير</button>
           </div>
@@ -618,14 +637,14 @@
       });
     </script> -->
     <script>
-        $(document).ready(function () {
-          // When the "اضافة معاير" button is clicked
-          $(".add-in").click(function () {
-            // Append the content of the main-content div to the ass div
-            $(".ass").append($(".main-content").html());
-          });
+      $(document).ready(function () {
+        // When the "اضافة معاير" button is clicked
+        $(".add-in").click(function () {
+          // Append the content of the main-content div to the ass div
+          $(".ass").append($(".main-content").html());
         });
-      </script>
+      });
+    </script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

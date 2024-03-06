@@ -28,6 +28,11 @@
       href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Cairo:wght@300;500;900&family=Roboto:ital,wght@1,100;1,300;1,500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
     <!-- font -->
   </head>
   <body>
@@ -337,10 +342,31 @@
 
           <!-- الاعدادات -->
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
-              <i class="fa-solid fa-gears ico"></i>
-              <span>الاعدادات العامة</span>
+            <a
+              href="#submenuWebsite-set"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <i class="fa-solid fa-clipboard ico"></i>
+              <span>الاعدادات العامه</span>
+              <i class="fa-solid fa-angle-up"></i>
             </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuWebsite-set"
+              data-bs-parent="#menu"
+            >
+              <li>
+                <a href="Weekends.html" class="nav-link">
+                  <span>العطلات الاسبوعيه</span></a
+                >
+              </li>
+              <li>
+                <a href="Public_holidays.html" class="nav-link">
+                  <span>العطلات الرسميه</span></a
+                >
+              </li>
+            </ul>
           </li>
           <!-- الاعدادات -->
         </ul>
@@ -409,7 +435,7 @@
             </div>
             <form action="bags.html">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <div class="text">
                     <label for="">اسم الحقيبه</label>
                     <div class="text-input">
@@ -417,7 +443,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <label for=""> المواد </label>
                   <div class="select">
                     <select
@@ -430,7 +456,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <label for=""> المعاير </label>
                   <div class="select">
                     <select
@@ -443,7 +469,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <label for=""> اختر الؤشر </label>
                   <div class="select">
                     <select
@@ -456,7 +482,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <label for=""> اختر المواضيع </label>
                   <div class="select">
                     <select
@@ -469,7 +495,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <div class="text">
                     <label for="">الحد الأدني للطلاب</label>
                     <div class="text-input">
@@ -477,7 +503,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <div class="text">
                     <label for="">الحد الأقصي للطلاب</label>
                     <div class="text-input">
@@ -485,7 +511,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <div class="text">
                     <label for="">عدد المحاضرات اليومي</label>
                     <div class="text-input">
@@ -494,7 +520,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <div class="text">
                     <label for="">الفئه المستهدفه</label>
                     <div class="text-input">
@@ -512,7 +538,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <div class="text">
                     <label for="">سعر الحقيبه</label>
                     <div class="text-input">
@@ -552,13 +578,13 @@
               <div class="col-lg-12">
                 <div class="text">
                   <label for="">اهداف الحقيبه</label>
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <div id="summernote"></div>
                 </div>
               </div>
 
               <div class="col-lg-12">
                 <label for=""> وصف الحقيبه </label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div id="summernotes"></div>
               </div>
 
               <div class="add-new">
@@ -571,7 +597,39 @@
         <!-- content -->
       </section>
     </div>
-    0
+    <script>
+      $("#summernote").summernote({
+        placeholder: "Hello stand alone ui",
+        tabsize: 2,
+        height: 120,
+        toolbar: [
+          ["style", ["style"]],
+          ["font", ["bold", "underline", "clear"]],
+          ["color", ["color"]],
+          ["para", ["ul", "ol", "paragraph"]],
+          ["table", ["table"]],
+          ["insert", ["link", "picture", "video"]],
+          ["view", ["fullscreen", "codeview", "help"]],
+        ],
+      });
+    </script>
+    <script>
+      $("#summernotes").summernote({
+        placeholder: "Hello stand alone ui",
+        tabsize: 2,
+        height: 120,
+        toolbar: [
+          ["style", ["style"]],
+          ["font", ["bold", "underline", "clear"]],
+          ["color", ["color"]],
+          ["para", ["ul", "ol", "paragraph"]],
+          ["table", ["table"]],
+          ["insert", ["link", "picture", "video"]],
+          ["view", ["fullscreen", "codeview", "help"]],
+        ],
+      });
+    </script>
+
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
