@@ -559,8 +559,10 @@
                   <div class="form-group upload_file">
                     <label for=""> اضافة صورة الشهادادت الحاصل عليها</label>
                     <label for="imageCover" class="upload_file_label">
-                      <i class="fa-regular fa-image"></i>
-                      <p>اسحب صور معبرة عن الشهادادت واسقطها هنا</p>
+                     <div class="ico-gala" id="imageIcon">
+                      <i class="fa-regular fa-image" ></i>
+                     </div>
+                      <p id="imageText">اسحب صور معبرة عن الشهادادت واسقطها هنا</p>
                       <span id="fileNameImage">او اضغط هنا</span>
                     </label>
                     <input
@@ -573,18 +575,30 @@
                     />
                   </div>
                   <script>
-                    const fileInputImage =
-                      document.getElementById("imageCover");
-                    const fileNameImage =
-                      document.getElementById("fileNameImage");
-
+                    const fileInputImage = document.getElementById("imageCover");
+                    const fileNameImage = document.getElementById("fileNameImage");
+                    const imageIcon = document.getElementById("imageIcon");
+                    const imageText = document.getElementById("imageText");
+                
                     fileInputImage.addEventListener("change", (event) => {
                       const file = event.target.files[0];
-                      fileNameImage.textContent = file.name;
+                
+                      // Display the uploaded image
+                      const reader = new FileReader();
+                      reader.onload = (e) => {
+                        imageIcon.style.display = "none";
+                        imageText.style.display = "none";
+                        fileNameImage.textContent = "";
+                        const img = document.createElement("img");
+                        img.src = e.target.result;
+                        img.style.width = "100%";
+                        img.style.height = "auto";
+                        fileNameImage.appendChild(img);
+                      };
+                      reader.readAsDataURL(file);
                     });
                   </script>
                 </div>
-              </div>
 
               <div class="add-new">
                 <button type="submit" class="add-this">اضافة</button>
