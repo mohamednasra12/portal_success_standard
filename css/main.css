@@ -623,8 +623,5 @@ div#AppendAnswerNewQuestion input[type="text"] {
 div#AppendAnswerNewQuestion span {
   color: var(--color-primary);
 }
-input[type="date"] {
-  border: 1px solid #0000001c !important;
-  border-radius: 10px;
-}
+
 /* start */
