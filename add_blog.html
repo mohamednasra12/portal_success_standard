@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/swiper-demos.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <!-- main css -->
     <!-- font -->
@@ -28,6 +29,11 @@
       rel="stylesheet"
     />
     <!-- font -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
   </head>
   <body>
     <div class="d-flex sidemobile p-0">
@@ -503,7 +509,7 @@
                 <div class="col-lg-12">
                   <label for="">وصف</label>
 
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <div id="summernote"></div>
                 </div>
               </div>
               <div class="add-new">
@@ -516,6 +522,22 @@
         <!-- content -->
       </section>
     </div>
+    <script>
+      $("#summernote").summernote({
+        placeholder: "Hello stand alone ui",
+        tabsize: 2,
+        height: 120,
+        toolbar: [
+          ["style", ["style"]],
+          ["font", ["bold", "underline", "clear"]],
+          ["color", ["color"]],
+          ["para", ["ul", "ol", "paragraph"]],
+          ["table", ["table"]],
+          ["insert", ["link", "picture", "video"]],
+          ["view", ["fullscreen", "codeview", "help"]],
+        ],
+      });
+    </script>
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/all.min.js"></script>
